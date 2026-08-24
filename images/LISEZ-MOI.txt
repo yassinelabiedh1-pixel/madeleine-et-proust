@@ -1,0 +1,101 @@
+PHOTOS DU SITE
+==============
+
+1) Grande photo du haut de page
+   → déposer ici :  images/hero.jpg
+     (paysage, idéalement 1920x1200 ou plus)
+
+2) Photo de chaque article
+   → créer le dossier  images/plats/  et y déposer les fichiers
+     avec EXACTEMENT ces noms (en .jpg, .jpeg, .png ou .webp) :
+
+ENTRÉE
+  omelette-palace-aux-oeufs-bio.jpg
+  tatin-tomate.jpg
+  salade-patate-douce-poulet.jpg
+  la-burrata-fruitee.jpg
+  l-aubergine-fumee.jpg
+
+SUITE
+  poulet-basse-temperature.jpg
+  feuillete-au-brie-figues-et-champignons.jpg
+  guacamole-et-crevettes-confites-au-beurre-sate.jpg
+  saumon-gravlax-guacamole.jpg
+  lotte-coco.jpg
+  le-poulpe.jpg
+  vitello-tonnato.jpg
+  salade-bowl-asiatique.jpg
+
+SANDWICHS
+  sandwich-jambon-beurre.jpg
+  croque-monsieur-truffe.jpg
+  focaccia.jpg
+
+DESSERT
+  bol-de-granola-maison.jpg
+  pain-perdu.jpg
+  pain-perdu-pistache-framboise.jpg
+  tiramisu.jpg
+  madeleine-givree.jpg
+
+COCKTAILS
+  orange-juice.jpg
+  lemonade.jpg
+  frutti-rossi.jpg
+  vert-glow.jpg
+  golden-nut.jpg
+  smoothie-glace-gourmand.jpg
+  jaune-soleil.jpg
+
+CAFÉ
+  espresso.jpg
+  lungo.jpg
+  americano.jpg
+  cafe-creme.jpg
+  cappucino.jpg
+  espresso-macchiato.jpg
+  double-espresso.jpg
+
+SIGNATURE FROIDE
+  iced-pistachio-latte.jpg
+  iced-americano.jpg
+  iced-caramel.jpg
+  iced-tea.jpg
+  iced-tea-signature.jpg
+  chocolat-glace.jpg
+  affogato.jpg
+  kombucha.jpg
+
+SIGNATURE CHAUDE
+  the.jpg
+  tisane.jpg
+  caramel-latte.jpg
+  latte-noisette.jpg
+  espresso-pistache.jpg
+  chocolat-chaud.jpg
+  chocolat-au-lait.jpg
+
+SUPPLÉMENT
+  chantilly-vanille-de-madagascar.jpg
+  praline-caramel-framboise.jpg
+
+PLUSIEURS PHOTOS SUR UN MÊME PLAT (diaporama automatique)
+  Exemple déjà en place : Le poulpe. Dans js/menu-data.js,
+  ajouter au plat une liste "photos" :
+      photos: [
+        "images/plats/le-poulpe-1.webp",
+        "images/plats/le-poulpe-2.webp",
+        "images/plats/le-poulpe-3.webp",
+      ],
+  Les photos défilent toutes seules (3,5 s) et le client peut
+  aussi les faire glisser au doigt. Les petits points dorés
+  indiquent la photo affichée.
+
+Notes :
+- Photos carrées ou presque (par ex. 600x600) : elles s'affichent
+  dans des vignettes carrées.
+- Tant qu'une photo n'existe pas, une fleur décorative est
+  affichée à la place — rien ne casse.
+- Si vous renommez un plat dans js/menu-data.js, le nom de
+  fichier attendu change aussi (c'est le nom français simplifié :
+  minuscules, sans accents, espaces remplacés par des tirets).
