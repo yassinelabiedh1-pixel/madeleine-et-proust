@@ -233,6 +233,11 @@ const MENU = [
       },
       {
         name: { fr: "Pain perdu", en: "French toast" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/pain-perdu-1.webp",
+          "images/plats/pain-perdu-2.webp",
+        ],
         desc: {
           fr: "Caramel au beurre salé et chantilly à la vanille de Madagascar.",
           en: "Salted butter caramel and Madagascar vanilla whipped cream.",
@@ -299,8 +304,6 @@ const MENU = [
       { name: { fr: "", en: "" }, photo: "images/patisserie/douceur-12.webp" },
       { name: { fr: "", en: "" }, photo: "images/patisserie/douceur-13.webp" },
       { name: { fr: "", en: "" }, photo: "images/patisserie/douceur-14.webp" },
-      { name: { fr: "", en: "" }, photo: "images/patisserie/douceur-15.webp" },
-      { name: { fr: "", en: "" }, photo: "images/patisserie/douceur-16.webp" },
     ],
   },
   {
