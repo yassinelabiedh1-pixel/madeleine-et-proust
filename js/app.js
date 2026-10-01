@@ -146,6 +146,28 @@
     );
   }
 
+  // Liste simple sans photos (catégorie avec simple: true)
+  function simpleListHTML(cat) {
+    const rows = cat.items
+      .map(function (item) {
+        const desc = item.desc[lang]
+          ? '<p class="list-desc">' + item.desc[lang] + "</p>"
+          : "";
+        return (
+          '<li class="list-row">' +
+          '<div class="list-top">' +
+          '<span class="list-name">' + item.name[lang] + "</span>" +
+          '<span class="list-dots" aria-hidden="true"></span>' +
+          '<span class="list-price">' + item.price + "</span>" +
+          "</div>" +
+          desc +
+          "</li>"
+        );
+      })
+      .join("");
+    return '<ul class="drink-list">' + rows + "</ul>";
+  }
+
   // Carte de la galerie pâtisserie : photo verticale + nom en bas
   function galleryCardHTML(item) {
     const label = (item.name && item.name[lang]) || "";
@@ -176,6 +198,8 @@
   function categoryHTML(cat, isDrinks) {
     const cards = cat.layout === "gallery"
       ? galleryHTML(cat)
+      : cat.simple
+      ? simpleListHTML(cat)
       : isDrinks
       ? '<div class="drink-cards">' + cat.items.map(drinkCardHTML).join("") + "</div>"
       : '<div class="dish-cards">' + cat.items.map(dishCardHTML).join("") + "</div>";
@@ -300,7 +324,7 @@
     );
 
     main
-      .querySelectorAll(".dish-card, .drink-card, .gallery-card, .category-title, .reviews-head")
+      .querySelectorAll(".dish-card, .drink-card, .drink-list, .gallery-card, .category-title, .reviews-head")
       .forEach(function (el) {
         el.classList.add("reveal");
         io.observe(el);

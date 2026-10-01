@@ -33,7 +33,6 @@ const MENU = [
         photos: [
           "images/plats/tatin-tomate-1.webp",
           "images/plats/tatin-tomate-2.webp",
-          "images/plats/tatin-tomate-3.webp",
         ],
         desc: {
           fr: "Tarte fine, crème de stracciatella, basilic frais & sauce vierge (tomates, olives, pignons).",
@@ -60,6 +59,8 @@ const MENU = [
         photos: [
           "images/plats/la-burrata-fruitee-1.webp",
           "images/plats/la-burrata-fruitee-2.webp",
+          "images/plats/la-burrata-fruitee-3.webp",
+          "images/plats/la-burrata-fruitee-4.webp",
         ],
         desc: {
           fr: "Carpaccio de melon, pêche en trois textures : rôtie au sirop d'érable et au romarin, en tartare parfumé au basilic et en pickles, amandes fraîches et vinaigrette au basilic.",
@@ -69,6 +70,12 @@ const MENU = [
       },
       {
         name: { fr: "L'aubergine fumée", en: "Smoked aubergine" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/l-aubergine-fumee-1.webp",
+          "images/plats/l-aubergine-fumee-2.webp",
+          "images/plats/l-aubergine-fumee-3.webp",
+        ],
         desc: {
           fr: "Aubergine fumée, mousseline de petits pois et de pois chiches parfumée au cumin, sauce au labné et au tahini, sauce vierge aux deux poivrons, condiment de pois chiches au romarin et à l'ail confit.",
           en: "Smoked aubergine, cumin-scented pea and chickpea mousseline, labneh and tahini sauce, two-pepper sauce vierge, rosemary chickpea condiment and garlic confit.",
@@ -89,7 +96,6 @@ const MENU = [
         photos: [
           "images/plats/poulet-basse-temperature-1.webp",
           "images/plats/poulet-basse-temperature-2.webp",
-          "images/plats/poulet-basse-temperature-3.webp",
         ],
         desc: {
           fr: "Champignon à la crème, œufs bio brouillés au persil, sauce césar maison aux anchois, roquette et pain toasté à l'huile d'olive.",
@@ -99,6 +105,11 @@ const MENU = [
       },
       {
         name: { fr: "Feuilleté au brie, figues et champignons", en: "Brie, fig & mushroom puff pastry" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/feuillete-au-brie-figues-et-champignons-1.webp",
+          "images/plats/feuillete-au-brie-figues-et-champignons-2.webp",
+        ],
         desc: {
           fr: "Base de pâte feuilletée, compotée d'oignons et de raisins secs noirs, champignons, brie et caramel au miso.",
           en: "Puff pastry base, onion and black raisin compote, mushrooms, brie and miso caramel.",
@@ -107,6 +118,11 @@ const MENU = [
       },
       {
         name: { fr: "Guacamole et crevettes confites au beurre saté", en: "Guacamole & shrimp confit in satay butter" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/guacamole-et-crevettes-confites-au-beurre-sate-1.webp",
+          "images/plats/guacamole-et-crevettes-confites-au-beurre-sate-2.webp",
+        ],
         desc: {
           fr: "Gaufre à l'avoine bio, œuf au plat bio, salade d'herbes et pickles d'oignon.",
           en: "Organic oat waffle, organic fried egg, herb salad and pickled onions.",
@@ -119,6 +135,7 @@ const MENU = [
         photos: [
           "images/plats/saumon-gravlax-guacamole-1.webp",
           "images/plats/saumon-gravlax-guacamole-2.webp",
+          "images/plats/saumon-gravlax-guacamole-3.webp",
         ],
         desc: {
           fr: "Œufs brouillés bio, salade de roquette et aneth, citron confit.",
@@ -127,20 +144,11 @@ const MENU = [
         price: "34",
       },
       {
-        name: { fr: "Lotte coco", en: "Coconut monkfish" },
-        desc: {
-          fr: "Lotte cuite à basse température, poêlée de légumes verts (épinards, courgettes, asperges et brocoli), sauce au lait de coco et à la citronnelle.",
-          en: "Slow-cooked monkfish, pan-fried green vegetables (spinach, courgette, asparagus and broccoli), coconut milk and lemongrass sauce.",
-        },
-        price: "42",
-      },
-      {
         name: { fr: "Le poulpe", en: "The octopus" },
         /* plusieurs photos = diaporama automatique */
         photos: [
           "images/plats/le-poulpe-1.webp",
           "images/plats/le-poulpe-2.webp",
-          "images/plats/le-poulpe-3.webp",
         ],
         desc: {
           fr: "Poulpe en deux cuissons, mousseline de patate douce, courgettes et poivron rouge grillés, sauce vierge à la betterave, olives et aneth, crumble d'amandes.",
@@ -150,6 +158,12 @@ const MENU = [
       },
       {
         name: { fr: "Vitello tonnato", en: "Vitello tonnato" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/vitello-tonnato-1.webp",
+          "images/plats/vitello-tonnato-2.webp",
+          "images/plats/vitello-tonnato-3.webp",
+        ],
         desc: {
           fr: "Noix de bœuf cuite à basse température, sauce vitello tonnato en espuma aérienne, câprons, pickles d'oignons et crumble de pignons.",
           en: "Slow-cooked beef, airy vitello tonnato espuma, caper berries, pickled onions and pine nut crumble.",
@@ -158,6 +172,11 @@ const MENU = [
       },
       {
         name: { fr: "Salade Bowl Asiatique", en: "Asian salad bowl" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/salade-bowl-asiatique-1.webp",
+          "images/plats/salade-bowl-asiatique-2.webp",
+        ],
         desc: {
           fr: "Vermicelles de riz et légumes croquants, pickles de chou et de carottes, rouleau de printemps aux crevettes, champignons, carottes et menthe, œuf façon ramen, crevettes poêlées au citron et cacahuètes grillées.",
           en: "Rice vermicelli and crunchy vegetables, pickled cabbage and carrot, shrimp spring roll, mushrooms, carrot and mint, ramen-style egg, lemon-seared shrimp and roasted peanuts.",
@@ -186,7 +205,6 @@ const MENU = [
         name: { fr: "Croque-monsieur truffé", en: "Truffle croque-monsieur" },
         /* plusieurs photos = diaporama automatique */
         photos: [
-          "images/plats/croque-monsieur-truffe-3.webp",
           "images/plats/croque-monsieur-truffe-1.webp",
           "images/plats/croque-monsieur-truffe-2.webp",
         ],
@@ -202,6 +220,7 @@ const MENU = [
         photos: [
           "images/plats/focaccia-1.webp",
           "images/plats/focaccia-2.webp",
+          "images/plats/focaccia-3.webp",
         ],
         desc: {
           fr: "Jambon traditionnel, burrata, pesto, tomate & roquette.",
@@ -223,7 +242,6 @@ const MENU = [
         photos: [
           "images/plats/bol-de-granola-maison-1.webp",
           "images/plats/bol-de-granola-maison-2.webp",
-          "images/plats/bol-de-granola-maison-3.webp",
         ],
         desc: {
           fr: "Yaourt brebis, miel, fruits et graines de chia.",
@@ -259,6 +277,13 @@ const MENU = [
       },
       {
         name: { fr: "Tiramisu", en: "Tiramisu" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/tiramisu-1.webp",
+          "images/plats/tiramisu-2.webp",
+          "images/plats/tiramisu-3.webp",
+          "images/plats/tiramisu-4.webp",
+        ],
         desc: {
           fr: "Mousse onctueuse à la vanille, crèmeux café, biscuit et extrait de café maison, mousse café ultra légère.",
           en: "Silky vanilla mousse, coffee crémeux, biscuit with house coffee extract, ultra-light coffee mousse.",
@@ -326,6 +351,8 @@ const MENU = [
     band: "cream",
     layout: "drinks",
     name: { fr: "Café", en: "Coffee" },
+    /* simple: true = liste nom + prix, sans photos */
+    simple: true,
     note: {
       fr: "Tous nos cafés sont préparés à partir de capsules Nespresso.",
       en: "All our coffees are brewed from Nespresso capsules.",
@@ -352,7 +379,7 @@ const MENU = [
       { name: { fr: "Iced caramel", en: "Iced caramel" }, desc: { fr: "", en: "" }, price: "14" },
       { name: { fr: "Iced latté noisette", en: "Iced hazelnut latte" }, photo: "images/plats/iced-latte-noisette.webp", desc: { fr: "", en: "" }, price: "13" },
       { name: { fr: "Iced tea", en: "Iced tea" }, desc: { fr: "", en: "" }, price: "13" },
-      { name: { fr: "Iced tea signature", en: "Signature iced tea" }, desc: { fr: "Pêche et abricot, vanille, fraise.", en: "Peach and apricot, vanilla, strawberry." }, price: "16" },
+      { name: { fr: "Iced tea signature", en: "Signature iced tea" }, photos: ["images/plats/iced-tea-signature-1.webp", "images/plats/iced-tea-signature-2.webp"], desc: { fr: "Pêche et abricot, vanille, fraise.", en: "Peach and apricot, vanilla, strawberry." }, price: "16" },
       { name: { fr: "Chocolat glacé", en: "Iced chocolate" }, desc: { fr: "", en: "" }, price: "18" },
       { name: { fr: "Affogato", en: "Affogato" }, desc: { fr: "", en: "" }, price: "18" },
       { name: { fr: "Kombucha", en: "Kombucha" }, desc: { fr: "Infusion fermentée, fine et naturellement pétillante.", en: "Fermented infusion, delicate and naturally sparkling." }, price: "16" },
