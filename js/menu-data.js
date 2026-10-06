@@ -54,19 +54,18 @@ const MENU = [
         price: "32",
       },
       {
-        name: { fr: "La burrata fruitée", en: "Fruity burrata" },
+        name: { fr: "Feuilleté au brie et champignons (fruits de saison)", en: "Brie & mushroom puff pastry (seasonal fruit)" },
         /* plusieurs photos = diaporama automatique */
         photos: [
-          "images/plats/la-burrata-fruitee-1.webp",
-          "images/plats/la-burrata-fruitee-2.webp",
-          "images/plats/la-burrata-fruitee-3.webp",
-          "images/plats/la-burrata-fruitee-4.webp",
+          "images/plats/feuillete-au-brie-et-champignons-1.webp",
+          "images/plats/feuillete-au-brie-et-champignons-2.webp",
+          "images/plats/feuillete-au-brie-et-champignons-3.webp",
         ],
         desc: {
-          fr: "Carpaccio de melon, pêche en trois textures : rôtie au sirop d'érable et au romarin, en tartare parfumé au basilic et en pickles, amandes fraîches et vinaigrette au basilic.",
-          en: "Melon carpaccio, peach in three textures: roasted with maple syrup and rosemary, basil-scented tartare and pickles, fresh almonds and basil vinaigrette.",
+          fr: "Base de pâte feuilletée, compotée d'oignons et de raisins secs noirs, champignons, brie et caramel au miso.",
+          en: "Puff pastry base, onion and black raisin compote, mushrooms, brie and miso caramel.",
         },
-        price: "32",
+        price: "29",
       },
       {
         name: { fr: "L'aubergine fumée", en: "Smoked aubergine" },
@@ -102,19 +101,6 @@ const MENU = [
           en: "Creamed mushrooms, organic scrambled eggs with parsley, house Caesar sauce with anchovies, rocket and olive-oil toast.",
         },
         price: "28",
-      },
-      {
-        name: { fr: "Feuilleté au brie, figues et champignons", en: "Brie, fig & mushroom puff pastry" },
-        /* plusieurs photos = diaporama automatique */
-        photos: [
-          "images/plats/feuillete-au-brie-figues-et-champignons-1.webp",
-          "images/plats/feuillete-au-brie-figues-et-champignons-2.webp",
-        ],
-        desc: {
-          fr: "Base de pâte feuilletée, compotée d'oignons et de raisins secs noirs, champignons, brie et caramel au miso.",
-          en: "Puff pastry base, onion and black raisin compote, mushrooms, brie and miso caramel.",
-        },
-        price: "29",
       },
       {
         name: { fr: "Guacamole et crevettes confites au beurre saté", en: "Guacamole & shrimp confit in satay butter" },
@@ -182,6 +168,14 @@ const MENU = [
           en: "Rice vermicelli and crunchy vegetables, pickled cabbage and carrot, shrimp spring roll, mushrooms, carrot and mint, ramen-style egg, lemon-seared shrimp and roasted peanuts.",
         },
         price: "39",
+      },
+      {
+        name: { fr: "Raviolis au saumon", en: "Salmon ravioli" },
+        desc: {
+          fr: "Pâtes fraîches faites maison, farcis au saumon, à l'aneth et au fromage blanc, servis avec une sauce rosée à la tomate confite, saumon en deux textures et micropousses.",
+          en: "Fresh homemade pasta filled with salmon, dill and fromage blanc, served with a rosé sauce of confit tomato, salmon two ways and microgreens.",
+        },
+        price: "42",
       },
     ],
   },
@@ -298,6 +292,28 @@ const MENU = [
         },
         price: "24",
       },
+      {
+        name: { fr: "Mousse au chocolat noir Caraïbe 66%", en: "Caraïbe 66% dark chocolate mousse" },
+        photo: "images/plats/mousse-au-chocolat-noir-caraibe.webp",
+        desc: {
+          fr: "Praliné noisettes et amandes caramélisées, croustillant praliné et fleur de sel.",
+          en: "Hazelnut praline and caramelised almonds, praline crunch and fleur de sel.",
+        },
+        price: "26",
+      },
+      {
+        name: { fr: "Big lava cookie", en: "Big lava cookie" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/big-lava-cookie-1.webp",
+          "images/plats/big-lava-cookie-2.webp",
+        ],
+        desc: {
+          fr: "Un mi-cuit de pâte à cookie et de fondant au chocolat agrémenté d'éclats de noisettes et de chocolat noir, accompagné de sa boule de glace à la vanille Bourbon.",
+          en: "A half-baked blend of cookie dough and chocolate fondant with hazelnut pieces and dark chocolate, served with a scoop of Bourbon vanilla ice cream.",
+        },
+        price: "38",
+      },
     ],
   },
   {
@@ -335,6 +351,7 @@ const MENU = [
     id: "cocktails",
     band: "cream",
     layout: "drinks",
+    simple: true,
     name: { fr: "Cocktails", en: "Cocktails" },
     items: [
       { name: { fr: "Orange Juice", en: "Orange juice" }, desc: { fr: "", en: "" }, price: "8" },
@@ -371,6 +388,7 @@ const MENU = [
     id: "signature-froide",
     band: "cream",
     layout: "drinks",
+    simple: true,
     name: { fr: "Signature", en: "Signature" },
     accent: { fr: "Froide", en: "Cold" },
     items: [
@@ -383,17 +401,20 @@ const MENU = [
       { name: { fr: "Chocolat glacé", en: "Iced chocolate" }, desc: { fr: "", en: "" }, price: "18" },
       { name: { fr: "Affogato", en: "Affogato" }, desc: { fr: "", en: "" }, price: "18" },
       { name: { fr: "Kombucha", en: "Kombucha" }, desc: { fr: "Infusion fermentée, fine et naturellement pétillante.", en: "Fermented infusion, delicate and naturally sparkling." }, price: "16" },
+      { name: { fr: "Berry Blush", en: "Berry Blush" }, desc: { fr: "Banane, cassis, framboise, betterave en poudre et lait d'amande maison.", en: "Banana, blackcurrant, raspberry, beetroot powder and house almond milk." }, price: "18" },
     ],
   },
   {
     id: "signature-chaude",
     band: "cream",
     layout: "drinks",
+    simple: true,
     name: { fr: "Signature", en: "Signature" },
     accent: { fr: "Chaude", en: "Hot" },
     items: [
       { name: { fr: "Thé", en: "Tea" }, photos: ["images/plats/the-1.webp", "images/plats/the-2.webp"], desc: { fr: "Sachet au choix parmi notre sélection.", en: "Your choice of tea bag from our selection." }, price: "8,5" },
       { name: { fr: "Tisane", en: "Herbal tea" }, desc: { fr: "Sachet au choix parmi notre sélection.", en: "Your choice of tea bag from our selection." }, price: "8,5" },
+      { name: { fr: "Sélection de thés Bio", en: "Organic tea selection" }, desc: { fr: "", en: "" }, price: "12" },
       { name: { fr: "Caramel latté", en: "Caramel latte" }, desc: { fr: "", en: "" }, price: "12" },
       { name: { fr: "Latté noisette", en: "Hazelnut latte" }, desc: { fr: "", en: "" }, price: "13" },
       { name: { fr: "Espresso Pistache", en: "Pistachio espresso" }, photos: ["images/plats/espresso-pistache-1.webp", "images/plats/espresso-pistache-2.webp"], desc: { fr: "", en: "" }, price: "15" },
@@ -405,6 +426,7 @@ const MENU = [
     id: "supplement",
     band: "cream",
     layout: "drinks",
+    simple: true,
     name: { fr: "Supplément", en: "Extras" },
     items: [
       { name: { fr: "Chantilly vanille de Madagascar", en: "Madagascar vanilla whipped cream" }, desc: { fr: "", en: "" }, price: "6" },
