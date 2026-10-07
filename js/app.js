@@ -110,6 +110,13 @@
     );
   }
 
+  // Badge "Nouveau" (article avec isNew: true)
+  function newBadgeHTML(item) {
+    return item.isNew
+      ? '<span class="new-badge">' + UI_TEXT.newBadge[lang] + "</span>"
+      : "";
+  }
+
   // Grande carte : photo en haut, nom + prix + description dessous
   function dishCardHTML(item) {
     const desc = item.desc[lang]
@@ -117,6 +124,7 @@
       : "";
     return (
       '<div class="dish-card">' +
+      newBadgeHTML(item) +
       photoHTML(item, "dish-photo") +
       '<div class="dish-body">' +
       '<div class="dish-top">' +
@@ -156,7 +164,7 @@
         return (
           '<li class="list-row">' +
           '<div class="list-top">' +
-          '<span class="list-name">' + item.name[lang] + "</span>" +
+          '<span class="list-name">' + item.name[lang] + newBadgeHTML(item) + "</span>" +
           '<span class="list-dots" aria-hidden="true"></span>' +
           '<span class="list-price">' + item.price + "</span>" +
           "</div>" +

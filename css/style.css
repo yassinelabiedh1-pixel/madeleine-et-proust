@@ -431,6 +431,7 @@ body {
 }
 
 .dish-card {
+  position: relative;
   background: var(--white-soft);
   border: 1px solid rgba(200, 163, 85, 0.22);
   border-radius: 20px;
@@ -748,6 +749,37 @@ body {
   color: rgba(250, 247, 239, 0.78);
   padding: 0 0.9rem 0.75rem;
   margin-top: -0.2rem;
+}
+
+/* --- Badge "Nouveau" --- */
+
+.new-badge {
+  display: inline-block;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--olive-deep);
+  background: var(--gold-soft);
+  border-radius: 999px;
+  padding: 0.42em 0.85em 0.38em;
+  white-space: nowrap;
+}
+
+.dish-card > .new-badge {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  z-index: 3;
+  box-shadow: 0 3px 12px rgba(40, 42, 14, 0.28);
+}
+
+.list-name .new-badge {
+  margin-left: 0.5rem;
+  font-size: 0.56rem;
+  vertical-align: 0.15em;
 }
 
 /* --- Liste simple des boissons (sans photos) --- */

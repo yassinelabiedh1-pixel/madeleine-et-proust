@@ -90,6 +90,15 @@ const MENU = [
     name: { fr: "Suite", en: "Mains" },
     items: [
       {
+        isNew: true,
+        name: { fr: "Raviolis au saumon", en: "Salmon ravioli" },
+        desc: {
+          fr: "Pâtes fraîches faites maison, farcis au saumon, à l'aneth et au fromage blanc, servis avec une sauce rosée à la tomate confite, saumon en deux textures et micropousses.",
+          en: "Fresh homemade pasta filled with salmon, dill and fromage blanc, served with a rosé sauce of confit tomato, salmon two ways and microgreens.",
+        },
+        price: "42",
+      },
+      {
         name: { fr: "Poulet basse température", en: "Slow-cooked chicken" },
         /* plusieurs photos = diaporama automatique */
         photos: [
@@ -169,14 +178,6 @@ const MENU = [
         },
         price: "39",
       },
-      {
-        name: { fr: "Raviolis au saumon", en: "Salmon ravioli" },
-        desc: {
-          fr: "Pâtes fraîches faites maison, farcis au saumon, à l'aneth et au fromage blanc, servis avec une sauce rosée à la tomate confite, saumon en deux textures et micropousses.",
-          en: "Fresh homemade pasta filled with salmon, dill and fromage blanc, served with a rosé sauce of confit tomato, salmon two ways and microgreens.",
-        },
-        price: "42",
-      },
     ],
   },
   {
@@ -230,6 +231,30 @@ const MENU = [
     layout: "plates",
     name: { fr: "Dessert", en: "Desserts" },
     items: [
+      {
+        isNew: true,
+        name: { fr: "Mousse au chocolat noir Caraïbe 66%", en: "Caraïbe 66% dark chocolate mousse" },
+        photo: "images/plats/mousse-au-chocolat-noir-caraibe.webp",
+        desc: {
+          fr: "Praliné noisettes et amandes caramélisées, croustillant praliné et fleur de sel.",
+          en: "Hazelnut praline and caramelised almonds, praline crunch and fleur de sel.",
+        },
+        price: "26",
+      },
+      {
+        isNew: true,
+        name: { fr: "Big lava cookie", en: "Big lava cookie" },
+        /* plusieurs photos = diaporama automatique */
+        photos: [
+          "images/plats/big-lava-cookie-1.webp",
+          "images/plats/big-lava-cookie-2.webp",
+        ],
+        desc: {
+          fr: "Un mi-cuit de pâte à cookie et de fondant au chocolat agrémenté d'éclats de noisettes et de chocolat noir, accompagné de sa boule de glace à la vanille Bourbon.",
+          en: "A half-baked blend of cookie dough and chocolate fondant with hazelnut pieces and dark chocolate, served with a scoop of Bourbon vanilla ice cream.",
+        },
+        price: "38",
+      },
       {
         name: { fr: "Bol de granola maison", en: "House granola bowl" },
         /* plusieurs photos = diaporama automatique */
@@ -291,28 +316,6 @@ const MENU = [
           en: "Ice cream cup of the day, served with light whipped cream and its gourmet sauce.",
         },
         price: "24",
-      },
-      {
-        name: { fr: "Mousse au chocolat noir Caraïbe 66%", en: "Caraïbe 66% dark chocolate mousse" },
-        photo: "images/plats/mousse-au-chocolat-noir-caraibe.webp",
-        desc: {
-          fr: "Praliné noisettes et amandes caramélisées, croustillant praliné et fleur de sel.",
-          en: "Hazelnut praline and caramelised almonds, praline crunch and fleur de sel.",
-        },
-        price: "26",
-      },
-      {
-        name: { fr: "Big lava cookie", en: "Big lava cookie" },
-        /* plusieurs photos = diaporama automatique */
-        photos: [
-          "images/plats/big-lava-cookie-1.webp",
-          "images/plats/big-lava-cookie-2.webp",
-        ],
-        desc: {
-          fr: "Un mi-cuit de pâte à cookie et de fondant au chocolat agrémenté d'éclats de noisettes et de chocolat noir, accompagné de sa boule de glace à la vanille Bourbon.",
-          en: "A half-baked blend of cookie dough and chocolate fondant with hazelnut pieces and dark chocolate, served with a scoop of Bourbon vanilla ice cream.",
-        },
-        price: "38",
       },
     ],
   },
@@ -412,9 +415,8 @@ const MENU = [
     name: { fr: "Signature", en: "Signature" },
     accent: { fr: "Chaude", en: "Hot" },
     items: [
-      { name: { fr: "Thé", en: "Tea" }, photos: ["images/plats/the-1.webp", "images/plats/the-2.webp"], desc: { fr: "Sachet au choix parmi notre sélection.", en: "Your choice of tea bag from our selection." }, price: "8,5" },
-      { name: { fr: "Tisane", en: "Herbal tea" }, desc: { fr: "Sachet au choix parmi notre sélection.", en: "Your choice of tea bag from our selection." }, price: "8,5" },
-      { name: { fr: "Sélection de thés Bio", en: "Organic tea selection" }, desc: { fr: "", en: "" }, price: "12" },
+      { isNew: true, name: { fr: "Sélection de thés et tisanes Bio", en: "Organic tea & herbal tea selection" }, desc: { fr: "", en: "" }, price: "12" },
+      { name: { fr: "Thé Kyufi", en: "Kyufi tea" }, desc: { fr: "", en: "" }, price: "8,5" },
       { name: { fr: "Caramel latté", en: "Caramel latte" }, desc: { fr: "", en: "" }, price: "12" },
       { name: { fr: "Latté noisette", en: "Hazelnut latte" }, desc: { fr: "", en: "" }, price: "13" },
       { name: { fr: "Espresso Pistache", en: "Pistachio espresso" }, photos: ["images/plats/espresso-pistache-1.webp", "images/plats/espresso-pistache-2.webp"], desc: { fr: "", en: "" }, price: "15" },
@@ -510,6 +512,7 @@ const UI_TEXT = {
   },
   cta: { fr: "Découvrir le menu", en: "Discover the menu" },
   coverMenu: { fr: "MENU", en: "MENU" },
+  newBadge: { fr: "Nouveau", en: "New" },
   coverFoot: { fr: "Haute pâtisserie française.", en: "Haute pâtisserie française." },
   footerText: {
     fr: "Notre cuisine célèbre la finesse des saveurs, la fraîcheur des produits et le plaisir du partage. Chaque plat est préparé avec passion et exigence.",
